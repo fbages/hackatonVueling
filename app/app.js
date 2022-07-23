@@ -11,7 +11,6 @@ const routerServices = require('./routes/routesServices');
 const db = require('./config/config');
 
 //Middlewares
-//app.use(validation);
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
@@ -21,6 +20,15 @@ app.use(express.json());
 
 //Middleware ErrorHandler
 app.use(errorHandler);
+
+app.use(function(req, res, next) {
+    res.status(404);
+   // respond with json
+   if (req.accepts('json')) {
+    res.json({ error: 'Page not found' });
+    return;
+  }
+});
 
 const PORT = 3000;
 server.listen(PORT, () => {

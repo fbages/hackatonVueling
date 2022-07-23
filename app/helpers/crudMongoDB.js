@@ -2,25 +2,25 @@ const db = require("../config/config")
 
 module.exports = {
 
-    getAll,
-    getOne,
-    createOne,
-    updateOne,
-    deleteOne
+    getAllItems,
+    getItem,
+    createItem,
+    updateItem,
+    deleteItem
 
 }
 
-async function getAll(collection) {
+async function getAllItems(collection) {
     let llistat = await db[collection].find({});
     return llistat;
 }
 
-async function getOne(collection, index) {
+async function getItem(collection, index) {
     let item = await db[collection].findOne({ id: index });
     return item;
 }
 
-async function createOne(collection, objectItem) {
+async function createItem(collection, objectItem) {
     let lastItem = await db[collection].find({}).limit(1).sort({ id: -1 });
     let index = (lastItem.length != 0) ? lastItem[0].id : 0;
     objectItem.id = index + 1;
@@ -28,16 +28,13 @@ async function createOne(collection, objectItem) {
     return newItem;
 }
 
-async function updateOne(collection, index, objectItem) {
-    let item = await db[collection].findOne({ id: index });
-    if (item != null) {
-        Object.assign(item, objectItem);
-        item.save();
-    }
-    return item;
+async function updateItem(collection, index, objectItem) {
+    const opts = { runValidators: true };
+    let item2 = await db[collection].updateOne({ id: index },objectItem,opts);
+    return item2;
 }
 
-async function deleteOne(collection, index) {
+async function deleteItem(collection, index) {
     let item = await db[collection].deleteOne({ id: index });
-    return "Eliminat"
+    return item;
 }
