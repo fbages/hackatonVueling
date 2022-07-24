@@ -1,6 +1,5 @@
 const express = require('express');
-const errorHandler = require('./middlewares/errorHandler');
-const validation = require('./middlewares/validator');
+const notfound404 = require('./middlewares/notfound404');
 const http = require('http')
 const app = express();
 const server = http.createServer(app);
@@ -15,20 +14,11 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 //Routes
- app.use(routerProducts);
- app.use(routerServices);
+app.use(routerProducts);
+app.use(routerServices);
 
 //Middleware ErrorHandler
-app.use(errorHandler);
-
-app.use(function(req, res, next) {
-    res.status(404);
-   // respond with json
-   if (req.accepts('json')) {
-    res.json({ error: 'Page not found' });
-    return;
-  }
-});
+app.use(notfound404);
 
 const PORT = 3000;
 server.listen(PORT, () => {

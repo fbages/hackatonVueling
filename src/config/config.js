@@ -9,7 +9,7 @@ let db = {};
   async function initialize() {
     //const { host, port, databaseName } = config.dbmongo;
     await mongoose.connect("mongodb://" + "localhost" + ":" + "27017" + "/" + "hackatonPrevi_FBages");
-    console.log("Conectat a la base de dades de MongoDB");
+    console.log("Conected to MongoDB database");
 
     db.products = mongoose.model("products", productSchema);
     db.services = mongoose.model("services", serviceSchema);

@@ -1,11 +1,11 @@
 {
-  "name": "nodeinitialdemo",
+  "name": "hackatonprevi",
   "version": "1.0.0",
-  "description": "sample project for node",
+  "description": "API CRUD for Products and Services",
   "main": "app.js",
   "scripts": {
-    "start": "node app/app.js",
-    "dev": "nodemon app/app.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
     "test": "jest"
   },
   "author": "",

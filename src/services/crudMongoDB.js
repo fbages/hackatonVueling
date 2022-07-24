@@ -35,6 +35,6 @@ async function updateItem(collection, index, objectItem) {
 }
 
 async function deleteItem(collection, index) {
-    let item = await db[collection].deleteOne({ id: index });
+        item = await db[collection].deleteOne({ id: index });
     return item;
 }

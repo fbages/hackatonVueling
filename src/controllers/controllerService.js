@@ -1,4 +1,4 @@
-const crud = require('../helpers/crudMongoDB');
+const crud = require('../services/crudMongoDB');
 
 exports.getAllServices = async (req, res, next) => {
     try {
