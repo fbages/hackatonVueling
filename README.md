@@ -1,7 +1,7 @@
 
 # Repte 4 CRUD - FBages
 
-Node js REST API to manage products and services
+Node js REST API to manage products and users
 
 ## Import project
 
