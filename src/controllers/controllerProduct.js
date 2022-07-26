@@ -12,7 +12,7 @@ exports.getAllProducts = async (req, res, next) => {
 
 exports.getProduct = async (req, res, next) => {
     try {
-        let index = req.params.id;
+        let index = req.params.productId;
         let result = await crud.getItem("products", index);
         if (result != null) {
             res.json(result);
@@ -38,14 +38,14 @@ exports.newProduct = async (req, res, next) => {
 
 exports.updateProduct = async (req, res, next) => {
     try {
-        let result = await crud.getItem("products", req.body.id);
+        let result = await crud.getItem("products", req.body.productId);
         if (result != null) {
-            let result2 = await crud.updateItem('products', req.body.id, req.body)
+            let result2 = await crud.updateItem('products', req.body.productId, req.body)
             if (result2.modifiedCount == 0) {
                 res.status(400);
                 res.json({ message: "Key is not correct, for product 'name' is required" });
             } else {
-                let result3 = await crud.getItem("products", req.body.id);
+                let result3 = await crud.getItem("products", req.body.productId);
                 res.status(201);
                 res.json(result3);
             }
@@ -62,7 +62,7 @@ exports.updateProduct = async (req, res, next) => {
 
 exports.deleteProduct = async (req, res, next) => {
     try {
-        let result = await crud.deleteItem('products', req.params.id);
+        let result = await crud.deleteItem('products', req.params.productId);
         if (result.deletedCount == 1) {
             res.json("Product deleted");
         } else {
