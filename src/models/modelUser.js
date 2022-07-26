@@ -2,9 +2,9 @@ const { Schema } = require('mongoose');
 
 const userSchema = new Schema({
     userId : {type: Number},
-    mail : {type: String, required:true},
+    mail : {type: String},
     age :{type: Number},
-    sex :{type: Number},
+    sex :{type: String},
     country : {type: String},
     recommendation: {
         recommendationId : {type: Number},
@@ -13,7 +13,7 @@ const userSchema = new Schema({
         text : {type: String},
         created : {type: Date},
         reviewsAvg : {type: Number},
-        originalReviewUrl : {type: Number},
+        originalReviewUrl : {type: String},
         likeCount : {type: Number},
         tags : {type : Array},
     },

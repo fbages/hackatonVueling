@@ -4,7 +4,7 @@ const http = require('http')
 const app = express();
 const server = http.createServer(app);
 const routerProducts = require('./routes/routesProducts');
-//const routerUsers = require('./routes/routesUsers');
+const routerUsers = require('./routes/routesUsers');
 
 //DB config
 const db = require('./config/config');
@@ -15,7 +15,7 @@ app.use(express.json());
 
 //Routes
 app.use(routerProducts);
-//app.use(routerUsers);
+app.use(routerUsers);
 
 //Middleware ErrorHandler
 app.use(notfound404);
