@@ -6,25 +6,29 @@ const userSchema = new Schema({
     age :{type: Number},
     sex :{type: String},
     country : {type: String},
-    recommendation: {
+    recommendation: [
+        {
         recommendationId : {type: Number},
         productId : {type: Number},
         image : {type: String},
         text : {type: String},
-        created : {type: Date},
+        //created : {type: Date},
         reviewsAvg : {type: Number},
         originalReviewUrl : {type: String},
         likeCount : {type: Number},
         tags : {type : Array},
-    },
+        rewards : {type : Number}
+    }],
 
-    comments: {
+    comments: [{
         productId : {type: Number},
         commentId : {type: Number},
-        recommendId : {type: Number},
+        recommendationId : {type: Number},
         comment : {type: String},
+        text: {type:String},
         like : {type: Number}, //0 es nolike y 1 es like
-    }
+        rewards : {type: Number}
+    }]
 });
 
 module.exports = userSchema;
