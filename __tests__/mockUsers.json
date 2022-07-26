@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "62dfc5060c14102700485782"
+  },
+  "age": 23,
+  "country": "EEUU",
+  "mail": "marcsmith@hotmail.com",
+  "recomendation": [
+    {
+      "recomendationId": 0,
+      "text": "My recomendation ....",
+      "likeCount": 23,
+      "productId": 1,
+      "reviewsAvg": 4.2,
+      "tags": [
+        "Zapatillas",
+        "Runners"
+      ],
+      "created": {
+        "$date": {
+          "$numberLong": "980982000000"
+        }
+      },
+      "originalreviewURL": "endpoint producte",
+      "image": "sdafds",
+      "rewards": "125"
+    }
+  ],
+  "sex": "male",
+  "userId": 0,
+  "comments": [
+    {
+      "recommendationId": 1,
+      "commentId": 0,
+      "text": "Me ha gustado mucho este producto",
+      "like": "1",
+      "rewards": "8"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62dfc9830c14102700485787"
+  },
+  "age": 33,
+  "country": "France",
+  "mail": "ellensmith@hotmail.com",
+  "recomendation": [
+    {
+      "recomendationId": 1,
+      "text": "My recomendation ....",
+      "likeCount": 5,
+      "productId": 1,
+      "reviewsAvg": 3,
+      "tags": [
+        "Zapatillas",
+        "Runners"
+      ],
+      "created": {
+        "$date": {
+          "$numberLong": "980982000000"
+        }
+      },
+      "originalreviewURL": "endpoint producte",
+      "image": "sdafds",
+      "rewards": "75"
+    }
+  ],
+  "sex": "female",
+  "userId": 1,
+  "comments": [
+    {
+      "recommendationId": 0,
+      "commentId": 0,
+      "text": "Me van perfectas",
+      "like": "1",
+      "rewards": "5"
+    }
+  ]
+}]
