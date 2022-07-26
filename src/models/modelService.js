@@ -13,8 +13,8 @@ const userSchema = new Schema({
         text : {type: String},
         created : {type: Date},
         reviewsAvg : {type: Number},
-        originalreviewUrl : {type: Number},
-        likecount : {type: Number},
+        originalReviewUrl : {type: Number},
+        likeCount : {type: Number},
         tags : {type : Array},
     },
 
@@ -22,8 +22,8 @@ const userSchema = new Schema({
         productId : {type: Number},
         commentId : {type: Number},
         recommendId : {type: Number},
-        comment : {type: Number},
-        like : {type: Number},
+        comment : {type: String},
+        like : {type: Number}, //0 es nolike y 1 es like
     }
 });
 
