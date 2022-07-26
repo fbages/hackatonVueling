@@ -1,7 +1,7 @@
 {
-  "name": "hackatonprevi",
+  "name": "hackatondecathlon",
   "version": "1.0.0",
-  "description": "API CRUD for Products and Services",
+  "description": "API CRUD for Products and Users",
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",

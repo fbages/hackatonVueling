@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const productSchema = require("../models/modelProduct");
-const serviceSchema = require("../models/modelService");
+const userSchema = require("../models/modelUser");
 
 let db = {};
 
@@ -13,7 +13,7 @@ let db = {};
     console.log("Conected to MongoDB database");
 
     db.products = mongoose.model("products", productSchema);
-    db.services = mongoose.model("services", serviceSchema);
+    db.users = mongoose.model("users", userSchema);
   }
 
   module.exports = db;
