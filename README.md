@@ -1,5 +1,5 @@
 
-# Repte 4 CRUD - FBages
+# Hackaton Decathlon - it Academy
 
 Node js REST API to manage products and users
 
@@ -31,14 +31,15 @@ https://github.com/fbages/hackatonprevi
 
 It contains following requests:
 
-- GET Retrieve all products
-- GET Retrieve one product
-- POST New product
-- PUT Update product
-- DEL Delete product
-- GET Retrieve all services
-- GET Retrieve one service
-- POST New service
-- PUT Update service
-- DEL Delete service
+- GET Retrieve all products -> localhost:3000/products
+- GET Retrieve one product -> localhost:3000/product/:productId
+- POST New product -> localhost:3000/product/:productId
+- PUT Update product -> localhost:3000/product/:productId
+- DEL Delete product -> localhost:3000/product/:productId
+
+- GET Retrieve all users -> localhost:3000/users
+- GET Retrieve one user -> localhost:3000/user/:productId
+- POST New user -> localhost:3000/user/:productId
+- PUT Update user -> localhost:3000/user/:productId
+- DEL Delete user -> localhost:3000/user/:productId
 - GET 404 - Not found
