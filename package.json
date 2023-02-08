@@ -1,5 +1,5 @@
 {
-  "name": "hackatondecathlon",
+  "name": "hackatonvueling",
   "version": "1.0.0",
   "description": "API CRUD for Products and Users",
   "main": "app.js",
@@ -15,6 +15,7 @@
     "express": "^4.18.1",
     "express-validator": "^6.14.2",
     "inquirer": "^8.0.0",
+    "inquirer-maxlength-input-prompt": "^1.0.2",
     "mongoose": "^6.4.6"
   },
   "devDependencies": {
