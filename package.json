@@ -1,7 +1,7 @@
 {
   "name": "hackatonvueling",
   "version": "1.0.0",
-  "description": "API CRUD for Products and Users",
+  "description": "Node js - Online Travel Agency Mission",
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -11,12 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^9.0.2",
-    "express": "^4.18.1",
-    "express-validator": "^6.14.2",
     "inquirer": "^8.0.0",
-    "inquirer-maxlength-input-prompt": "^1.0.2",
-    "mongoose": "^6.4.6"
+    "inquirer-maxlength-input-prompt": "^1.0.2"
   },
   "devDependencies": {
     "jest": "^28.1.1",

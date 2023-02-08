@@ -1,7 +1,6 @@
 
 const SearchTrip = require('./src/features/searchTrip');
-const {csvToJson} = require('./src/services/csvToJson');
-
+const { csvToJson } = require('./src/services/csvToJson');
 
 (async () => {
     let data = await csvToJson();

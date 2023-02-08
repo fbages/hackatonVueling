@@ -30,12 +30,12 @@ class SearchInputPrompt extends InputPrompt {
         if (this.status === 'pending') {
             const textIntroduit = this.rl.line;
             this.opt.viatgesTrobats = findTrips(textIntroduit, this.opt.existingTrips);
-            this.opt.viatgesMostrar='';
+            this.opt.viatgesMostrar = '';
             //console.log(this.opt.viatgesTrobats)
-            for (let i = 1; i < this.opt.viatgesTrobats.length+1; i++) {
-                if (this.opt.viatgesTrobats[i-1]===true) {
+            for (let i = 1; i < this.opt.viatgesTrobats.length + 1; i++) {
+                if (this.opt.viatgesTrobats[i - 1] === true) {
                     this.opt.viatgesMostrar += `${this.opt.existingTrips[1][i]} \n`
-                } 
+                }
             }
         }
         const transform = partialRight(

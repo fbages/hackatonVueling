@@ -1,1 +1,32 @@
-{"data":[{"tripName":"Europe Popular Capitals","tripType":" Land Trip","duration":" 3 days","cities":" Madrid, Paris, London","specifics":" Hotel Best Madrid 3*, Hotel Worst Paris 4*"},{"tripName":"Europe laying out cities","tripType":" Land Trip","duration":" 3 days","cities":" Berlín, Madrid","specifics":" Hotel Best Madrid 3*, Hotel Worst Berlin 4*"},{"tripName":"Infinite Egipt","tripType":" Air Trip","duration":" 4 days","cities":" Madrid, القاهرة‎, الأقصر‎","specifics":" Madrid 09:00, الأقصر‎ 10:00"},{"tripName":"Incredible China","tripType":" Air Trip","duration":" 10 dies","cities":" Barcelona, Madrid, 广州市, 北京市","specifics":" Madrid 09:00, 北京市 10:00"}]}
+{
+  "data": [
+    {
+      "tripName": "Europe Popular Capitals",
+      "tripType": " Land Trip",
+      "duration": " 3 days",
+      "cities": " Madrid, Paris, London",
+      "specifics": " Hotel Best Madrid 3*, Hotel Worst Paris 4*"
+    },
+    {
+      "tripName": "Europe laying out cities",
+      "tripType": " Land Trip",
+      "duration": " 3 days",
+      "cities": " Berlín, Madrid",
+      "specifics": " Hotel Best Madrid 3*, Hotel Worst Berlin 4*"
+    },
+    {
+      "tripName": "Infinite Egipt",
+      "tripType": " Air Trip",
+      "duration": " 4 days",
+      "cities": " Madrid, القاهرة‎, الأقصر‎",
+      "specifics": " Madrid 09:00, الأقصر‎ 10:00"
+    },
+    {
+      "tripName": "Incredible China",
+      "tripType": " Air Trip",
+      "duration": " 10 dies",
+      "cities": " Barcelona, Madrid, 广州市, 北京市",
+      "specifics": " Madrid 09:00, 北京市 10:00"
+    }
+  ]
+}

@@ -24,3 +24,4 @@ Follow the steps below:
 
 ## Instructions
 
+Once application is running on the terminal, you can write where do you want to travel. After writing at least 3 letters of the city, registered trips that include your city will appear bellow.

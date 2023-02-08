@@ -1,7 +1,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 
-const csvToJson = async ()=>{
+const csvToJson = async () => {
 
     try {
         let csvFileName = 'mockTrips.csv';
@@ -11,7 +11,6 @@ const csvToJson = async ()=>{
         );
         let jsonFile = { data: [] };
         let particioEnter = csvFile.split(/\r?\n/);
-        //console.log(particioEnter)
         //llegir primera linea fins a enter per coneixer les propietats del objecte
         let properties = [];
         properties = particioEnter[0].split(";");
@@ -24,17 +23,16 @@ const csvToJson = async ()=>{
                     obj[properties[j]] = valors[j];
                 } else {
                     obj[properties[j]] = +valors[j];
-
                 }
             }
             jsonFile.data.push(obj);
         }
-       await fs.writeFile(  path.join(__dirname, "..", "..", "__tests__", 'mockTrips.json'),JSON.stringify(jsonFile))
-        return [jsonFile,particioEnter]
+        await fs.writeFile(path.join(__dirname, "..", "..", "__tests__", 'mockTrips.json'), JSON.stringify(jsonFile))
+        return [jsonFile, particioEnter]
     } catch (error) {
         console.log(error)
     }
 
 }
 
-module.exports = {csvToJson}
+module.exports = { csvToJson }
