@@ -1,7 +1,7 @@
 
-# Hackaton Decathlon - it Academy
+# Hackaton Vueling - IT Academy
 
-Node js REST API to manage products and users
+Node js - Online Travel Agency Mission
 
 ## Import project
 
@@ -12,13 +12,13 @@ Project uses MongoDB database, install it before use this project
 
 * Clone the project from the Github Platform. Execute:
   ```
-  git clone https://github.com/fbages/hackatonprevi
+  git clone https://github.com/fbages/hackatonVueling
   ```
 * Open the project downloaded and install dependecies:
   ```
   npm i
   ```  
-* Run the project inside src folder and localhost port 3000:
+* Run the project:
    ```
   cd src
   node app.js 
